@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="lab2.2-boot-web-client"/>
+<aop-project name="lab11.3-spring-boot-reactive-rest"/>
+<aop-project name="lab5.6-spring-security-auth-server"/>
+<aop-project name="lab5.6-spring-security-client"/>
+<aop-project name="lab4.3-spring-boot-batch"/>
+<aop-project name="lab7-spring-boot-rest-data"/>
+<aop-project name="lab3.2-spring-boot-actuator"/>
+<aop-project name="lab9.3-spring-webflux-reactive"/>
+<aop-project name="lab3.1-spring-boot-rest-hateoas"/>
+<aop-project name="lab9.1-boot-custom-FailureAnalyzer"/>
+<aop-project name="spring-boot-mysql-jpa-hibernate"/>
+<aop-project name="lab5.1-spring-security-jdbc-authentication"/>
+<aop-project name="lab1.2-spring-boot-MVC-Contoller"/>
+<aop-project name="lab3.4-spring-boot-swagger-test"/>
+<aop-project name="lab7-sping-boot-data"/>
+<aop-project name="lab2.1-boot-web-service"/>
+<aop-project name="lab10.1-spring-boot-redis-cache"/>
+<aop-project name="lab10.2-spring-redis-demo-pcf"/>
+<aop-project name="lab6.1-spring-boot-activemq"/>
+<aop-project name="lab5.2-spring-boot-ldap"/>
+<aop-project name="spring-boot-web-socket-user-notifications"/>
+<aop-project name="lab9.2-SpringBootRestAPI"/>
+<aop-project name="lab4.4-spring-boot-axon-ES"/>
+<aop-project name="lab8-spribg-boot-camel"/>
+</aop-reference-model>

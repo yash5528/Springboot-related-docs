@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;lab7-spring-boot-rest-data&apos;&#x0D;&#x0A;- Original project: &apos;lab7-spring-boot-rest-data&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     hello.Address.java&#x0D;&#x0A;     hello.AddressRepository.java&#x0D;&#x0A;     hello.Customer.java&#x0D;&#x0A;     hello.CustomerRepository.java&#x0D;&#x0A;     hello.Initializer.java" description="Delete elements" element1="/src\/main\/java&lt;hello{Address.java" element2="/src\/main\/java&lt;hello{AddressRepository.java" element3="/src\/main\/java&lt;hello{Initializer.java" element4="/src\/main\/java&lt;hello{CustomerRepository.java" element5="/src\/main\/java&lt;hello{Customer.java" elements="5" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1537025839656" subPackages="false" version="1.0"/>
+</session>

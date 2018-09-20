@@ -1,0 +1,17 @@
+Spring Batch is a framework for batch processing - execution of a series of jobs. 
+In Spring Batch, A job consists of many steps and each step consists of a 
+READ-PROCESS-WRITE task or single operation task (tasklet).
+
+1. For "READ-PROCESS-WRITE" process, it means "read" data from the resources 
+(csv, xml or database), "process" it and "write" it to other resources (csv, xml and 
+database). For example, a step may read data from a CSV file, process it and write it
+into the database. Spring Batch provides many made Classes to read/write CSV, 
+XML and database.
+
+2. For "single" operation task (tasklet), it means doing single task only, like clean 
+up the resources after or before a step is started or completed.
+
+3. And the steps can be chained together to run as a job.
+1 Job = Many Steps.
+1 Step = 1 READ-PROCESS-WRITE or 1 Tasklet.
+Job = {Step 1 -> Step 2 -> Step 3} (Chained together)

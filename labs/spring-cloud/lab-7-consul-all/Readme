@@ -1,0 +1,29 @@
+To start consul
+
+> Consul agent -dev
+
+1. To access Consul web console:
+
+http:localhost:8500
+
+
+2. Health Checking
+
+spring:
+  cloud:
+    consul:
+      discovery:
+        healthCheckPath: /my-health-check
+        healthCheckInterval: 20s
+
+As a result, Consul will poll the “/my-health-check” endpoint every 20 seconds.
+
+Let’s define our custom health check service to return a OK status:
+
+
+3.Distributed Configuration
+
+We can create the property by going to the “KEY/VALUE” section, then entering “/config/myApp/my/prop” in the “Create Key” form and “Hello World” as value. 
+Finally, click the “Create” button.
+
+

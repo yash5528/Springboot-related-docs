@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\MST\labs\boot\lab7-spring-data-association-rest"/>
+			<item value="D:\MST\labs\boot\spring-redis-demo-master"/>
+			<item value="D:\MST\labs\boot\spring-boot-redis-cache"/>
+			<item value="D:\MST\labs\boot\spring-data-redis"/>
+			<item value="D:\MST\labs\boot\lab9.3-spring-webflux-reactive"/>
+			<item value="D:\MST\labs\boot"/>
+			<item value="D:\MST\labs\boot\lab7-spring-boot-rest-data"/>
+			<item value="D:\MST\labs\boot\spirng-boot-data-rest2"/>
+			<item value="D:\MST\labs\boot\sping-data-rest"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

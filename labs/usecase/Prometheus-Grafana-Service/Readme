@@ -1,0 +1,40 @@
+1. In pom.xml, add the dependency for micrometer-core and micrometer-prometheus-registry 
+
+2. application.properties: Enable the actuator and Prometheus endpoints 
+
+management.endpoint.metrics.enabled=true
+management.endpoints.web.exposure.include=*
+management.endpoint.prometheus.enabled=true
+management.metrics.export.prometheus.enabled=true
+
+
+3. browse URL http://localhost:9000/actuator
+see the prometheus endpoint as below:
+http://localhost:9000/actuator/prometheus 
+
+Note : For collecting metrics from Prometheus,we need to access the below endpoint 
+"http://localhost:9000/actuator/prometheus" from Prometheus yaml file (test-app.yml)
+
+4. copy test-app.yml file into prometheus-2.3.1.windows-amd64
+
+5. Start the Prometheus server by using the command 
+
+prometheus.exe --config.file=test-app.yml
+
+6. Test the Prometheus server by browsing to the URL http://localhost:9090/
+
+7. Start the Grafana server
+grafana-server.exe
+
+8. Log in to Grafana by browsing to http://localhost:3000, The username and password are "admin/admin" 
+
+9. Add Prometheus as a Data Source in Grafana
+Click on "Add Data Source" 
+Name = Prometheus-server
+Type = Prometheus 
+URL = http://localhost:9090
+Click "Save & Test."
+
+10. From Prometheus -> Select the metrics -> Execute -> See the Graph
+
+

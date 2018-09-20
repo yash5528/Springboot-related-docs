@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public interface AccountService {
+
+	
+	@RequestMapping("/")
+	public String disp();
+	
+}

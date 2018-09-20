@@ -1,0 +1,7 @@
+---
+applications:
+- name: green-app
+  memory: 1024M
+  instances: 1
+  host: myapptest777v2
+  path: target/green.war

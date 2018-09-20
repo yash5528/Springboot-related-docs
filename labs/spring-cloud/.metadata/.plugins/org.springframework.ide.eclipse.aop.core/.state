@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="lab-7-consul-other-service"/>
+<aop-project name="lab-6-config-service"/>
+<aop-project name="lab-3-routing-and-filtering-service"/>
+<aop-project name="demo-eureka-service"/>
+<aop-project name="spring-data-association-rest"/>
+<aop-project name="lab-4-client-side-load-balancing-user"/>
+<aop-project name="lab-7-consul-all"/>
+<aop-project name="lab-1-eureka-service"/>
+<aop-project name="lab-2-gs-circuit-breaker-hystrix"/>
+<aop-project name="demo-eureka-client"/>
+<aop-project name="lab-7-consul-simple-service"/>
+<aop-project name="spring-cloud-gateway"/>
+<aop-project name="lab-2-gs-circuit-breaker-service"/>
+<aop-project name="lab-3-routing-filtering-gateway"/>
+<aop-project name="lab-4-client-side-load-balancing-say-hello"/>
+<aop-project name="lab-1-eureka-client"/>
+<aop-project name="demo-eureka-other--feign-client"/>
+<aop-project name="demo-eureka-other-client"/>
+</aop-reference-model>

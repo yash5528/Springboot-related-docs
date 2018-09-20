@@ -1,0 +1,20 @@
+ Create a Deployable War File
+
+1. update the application's main class to extend SpringBootServletInitializer:
+
+@SpringBootApplication
+public class Application extends SpringBootServletInitializer {
+
+2. in pom.xml
+<packaging>war</packaging>
+
+3. The final step in the process is to ensure that the embedded servlet container 
+does not interfere with the servlet container to which the war file is deployed
+
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-tomcat</artifactId>
+		<scope>provided</scope>
+	</dependency>
+</dependencies>

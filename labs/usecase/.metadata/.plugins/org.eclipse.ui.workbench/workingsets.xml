@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1535380947746_0" label="sample-spring-microservices" name="sample-spring-microservices">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/gateway-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/customer-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/zipkin-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/discovery-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/account-service" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1535381023747_1" label="Window Working Set" name="Aggregate for window 1535381023747"/>
+</workingSetManager>

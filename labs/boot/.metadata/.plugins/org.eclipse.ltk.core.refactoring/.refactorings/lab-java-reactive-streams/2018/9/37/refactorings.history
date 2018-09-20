@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PrintSubscriber.java&apos; to &apos;lab-java-reactive-streams2/src/demo&apos;&#x0D;&#x0A;- Original project: &apos;lab-java-reactive-streams&apos;&#x0D;&#x0A;- Destination element: &apos;lab-java-reactive-streams2/src/demo&apos;&#x0D;&#x0A;- Original element: &apos;demo.PrintSubscriber.java&apos;" description="Copy compilation unit" destination="=lab-java-reactive-streams2/src&lt;demo" element1="/src&lt;demo{PrintSubscriber.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1537025376227" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FeignOtherController {
+
+	@AutoWired
+	AccountService account;
+	
+	@RequestMapping("/")
+	public String info()
+	{
+		
+	}
+}

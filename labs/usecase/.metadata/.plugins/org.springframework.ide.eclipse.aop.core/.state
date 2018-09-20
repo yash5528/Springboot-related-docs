@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="customer-service"/>
+<aop-project name="gateway-service"/>
+<aop-project name="zipkin-service"/>
+<aop-project name="discovery-service"/>
+<aop-project name="account-service"/>
+<aop-project name="config-service"/>
+</aop-reference-model>

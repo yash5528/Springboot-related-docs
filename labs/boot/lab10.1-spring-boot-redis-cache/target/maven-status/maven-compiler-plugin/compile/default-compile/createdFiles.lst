@@ -1,0 +1,6 @@
+com\concretepage\entity\Article.class
+com\concretepage\controller\ArticleController.class
+com\concretepage\SpringBootAppStarter.class
+com\concretepage\repository\ArticleRepository.class
+com\concretepage\service\ArticleService.class
+com\concretepage\service\IArticleService.class

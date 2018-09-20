@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;demo.data.rest&apos; to &apos;lab11-spring-boot-rest-data/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;lab7-spring-boot-rest-data&apos;&#x0D;&#x0A;- Destination element: &apos;lab11-spring-boot-rest-data/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;lab7-spring-boot-rest-data/src/main/java/demo.data.rest&apos;" description="Copy package" destination="=lab11-spring-boot-rest-data/src\/main\/java" element1="/src\/main\/java&lt;demo.data.rest" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1534941689867" version="1.0"/>
+</session>

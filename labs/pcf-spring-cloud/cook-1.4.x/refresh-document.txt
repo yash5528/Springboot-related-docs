@@ -1,0 +1,4 @@
+The config service will automatically detect the commit and start serving the new value. However, we want to see the change within our example service. To do this, we have to call the refresh endpoint that spring actuator has added for us.
+
+curl -X POST http://localhost:8080/refresh  
+["foo.bar"]%                                    

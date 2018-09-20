@@ -1,0 +1,7 @@
+---
+applications:
+- name: blue-app
+  memory: 1024M
+  instances: 1
+  host: myapptest777
+  path: target/blue.war

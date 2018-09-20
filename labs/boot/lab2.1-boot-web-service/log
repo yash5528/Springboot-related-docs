@@ -1,0 +1,1493 @@
+
+REQUEST: [2018-04-23T11:16:15+05:30]
+POST /oauth/token HTTP/1.1
+Host: login.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+grant_type=refresh_token&refresh_token=eyJhbGciOiJSUzI1NiIsImtpZCI6InNoYTItMjAxNy0wMS0yMC1rZXkiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiIwNGI2ZTM0NjZiMGY0ZjAxYmFmMDgxYjg2NDQ1YmUyMy1yIiwic3ViIjoiOWM5OWExZjMtNTFkYS00YWQ4LTg2MTMtN2VlN2I0NzhiZTYxIiwic2NvcGUiOlsib3BlbmlkIiwidWFhLnVzZXIiLCJjbG91ZF9jb250cm9sbGVyLnJlYWQiLCJwYXNzd29yZC53cml0ZSIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiXSwiaWF0IjoxNTI0NDU3OTI5LCJleHAiOjE1MjUwNjI3MjksImNpZCI6ImNmIiwiY2xpZW50X2lkIjoiY2YiLCJpc3MiOiJodHRwczovL3VhYS5ydW4ucGl2b3RhbC5pby9vYXV0aC90b2tlbiIsInppZCI6InVhYSIsImdyYW50X3R5cGUiOiJwYXNzd29yZCIsInVzZXJfbmFtZSI6ImFkaXR5YWhydWRheWFtNzc3QGdtYWlsLmNvbSIsIm9yaWdpbiI6InVhYSIsInVzZXJfaWQiOiI5Yzk5YTFmMy01MWRhLTRhZDgtODYxMy03ZWU3YjQ3OGJlNjEiLCJyZXZfc2lnIjoiMWM4MzIxZiIsImF1ZCI6WyJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiLCJjZiIsInVhYSIsIm9wZW5pZCJdfQ.M_K4oiyYHix45OxBNeMIvJeNJlpb9PeY58pFLCcNF5b2ALc8Rwm7jSOChlN-37eise7zwFeCzGvJZ_Dld2rBpEwlvlGn5p4c9rxndOhvP-Bd_6pYZBN_HyeQgfWXNHEMt7Ef6gccU8t8B11vo9vmAsip-Wb5K2aJXJdEgfmzepFBefETSq62fksoVZhsyhBq16hcunzer8z0z5W-8A3t2bBEuR_OXBt5Nt6ztdC0GviauQjhgPo0WJNnI682RDgYZJDbWith_YViDjZKltwV9xB9KMxpjyU5Tioc7g-Z90JwDLnUasruQQpN5wMinmL2LaxsKHCgISBLRYbp0KtkSg&scope=
+
+RESPONSE: [2018-04-23T11:16:16+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 2474
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Cache-Control: no-store
+Content-Type: application/json;charset=UTF-8
+Date: Mon, 23 Apr 2018 05:46:15 GMT
+Expires: 0
+Pragma: no-cache
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Vcap-Request-Id: 94fbb96b-fc95-4a32-6758-b2bb9e25bfa1
+X-Xss-Protection: 1; mode=block
+
+{"access_token":"[PRIVATE DATA HIDDEN]","token_type":"[PRIVATE DATA HIDDEN]","refresh_token":"[PRIVATE DATA HIDDEN]","expires_in":599,"scope":"cloud_controller.read password.write cloud_controller.write openid uaa.user","jti":"efc64038cfe84233a075cfe524908880"}
+
+REQUEST: [2018-04-23T11:16:16+05:30]
+GET /v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/apps?q=name%3Alab1-24apr&inline-relations-depth=1 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:17+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 107
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:17 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19922
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 43bce0e5-2ddb-4a8a-6ace-4bb2493b1d1e::c5a0f6e3-f5c8-4cde-8838-e3475c2f904e
+
+{
+  "total_results": 0,
+  "total_pages": 1,
+  "prev_url": null,
+  "next_url": null,
+  "resources": [
+
+  ]
+}
+Creating app lab1-24apr in org MST / space development as adityahrudayam777@gmail.com...
+
+REQUEST: [2018-04-23T11:16:17+05:30]
+POST /v2/apps?async=true HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+{"name":"lab1-24apr","space_guid":"e26390db-1f29-407d-bacd-41fdc6cecca1"}
+
+RESPONSE: [2018-04-23T11:16:18+05:30]
+HTTP/1.1 201 Created
+Connection: close
+Content-Length: 1695
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:18 GMT
+Location: /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19921
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: bee7bc3a-fb8a-4660-5381-1d94fed13761::a329cc1b-0f26-4ecc-8242-95920f8da031
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:18Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": null,
+    "detected_buildpack_guid": null,
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STOPPED",
+    "version": "0445f9c5-ab1f-45a0-a87d-90db785e4469",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": null,
+    "package_state": "PENDING",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": null,
+    "detected_start_command": "",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+OK
+
+
+REQUEST: [2018-04-23T11:16:18+05:30]
+GET /v2/organizations/d7713572-8a98-4266-9263-32e089442834/private_domains HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:19+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 107
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:19 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19920
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 447ac18f-e6f7-4fd9-745c-029640ba8cb4::66745a42-12fd-48ee-af52-bae2736248cd
+
+{
+  "total_results": 0,
+  "total_pages": 1,
+  "prev_url": null,
+  "next_url": null,
+  "resources": [
+
+  ]
+}
+
+REQUEST: [2018-04-23T11:16:19+05:30]
+GET /v2/shared_domains?inline-relations-depth=1 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:20+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1291
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:20 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19919
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 260945cc-2a48-43c9-5a77-cf9e7329b0ce::99262d7a-654e-44ec-a9f1-f541c0deaa11
+
+{
+  "total_results": 3,
+  "total_pages": 1,
+  "prev_url": null,
+  "next_url": null,
+  "resources": [
+    {
+      "metadata": {
+        "guid": "fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+        "url": "/v2/shared_domains/fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+        "created_at": "2013-05-04T00:29:46Z",
+        "updated_at": "2018-04-18T19:27:47Z"
+      },
+      "entity": {
+        "name": "cfapps.io",
+        "router_group_guid": null,
+        "router_group_type": null
+      }
+    },
+    {
+      "metadata": {
+        "guid": "d42961c0-8361-4d60-bf58-9a3c1f09600a",
+        "url": "/v2/shared_domains/d42961c0-8361-4d60-bf58-9a3c1f09600a",
+        "created_at": "2016-09-08T21:22:28Z",
+        "updated_at": null
+      },
+      "entity": {
+        "name": "cf-tcpapps.io",
+        "router_group_guid": "ac86636b-fc8b-46d7-49c4-edce5118daf2",
+        "router_group_type": "tcp"
+      }
+    },
+    {
+      "metadata": {
+        "guid": "f6ed3f6b-f051-4f09-8d88-f95c09e7cf0f",
+        "url": "/v2/shared_domains/f6ed3f6b-f051-4f09-8d88-f95c09e7cf0f",
+        "created_at": "2018-02-15T01:15:55Z",
+        "updated_at": "2018-02-15T01:15:55Z"
+      },
+      "entity": {
+        "name": "apps.internal",
+        "router_group_guid": null,
+        "router_group_type": null
+      }
+    }
+  ]
+}
+
+REQUEST: [2018-04-23T11:16:20+05:30]
+GET /v2/routes?inline-relations-depth=1&q=host%3Alab1-24apr%3Bdomain_guid%3Afb6bd89f-2ed9-49d4-9ad1-97951a573135 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:22+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 107
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:21 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19918
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 63d3232c-50e9-4ceb-4028-071872e1847c::1b225a18-1d47-4b95-9c5e-e3bff4d7a4b3
+
+{
+  "total_results": 0,
+  "total_pages": 1,
+  "prev_url": null,
+  "next_url": null,
+  "resources": [
+
+  ]
+}
+Creating route lab1-24apr.cfapps.io...
+
+REQUEST: [2018-04-23T11:16:22+05:30]
+POST /v2/routes?async=true&inline-relations-depth=1 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+{"host":"lab1-24apr","domain_guid":"fb6bd89f-2ed9-49d4-9ad1-97951a573135","space_guid":"e26390db-1f29-407d-bacd-41fdc6cecca1"}
+
+RESPONSE: [2018-04-23T11:16:23+05:30]
+HTTP/1.1 201 Created
+Connection: close
+Content-Length: 2741
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:23 GMT
+Location: /v2/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19917
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 726a4cda-7634-4574-51cb-f7c4b98d2c04::d06358ae-9514-4888-b180-dbce1053c656
+
+{
+  "metadata": {
+    "guid": "8b4d1da7-dc7f-4515-b840-c2e91f9916ba",
+    "url": "/v2/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba",
+    "created_at": "2018-04-23T05:46:22Z",
+    "updated_at": "2018-04-23T05:46:22Z"
+  },
+  "entity": {
+    "host": "lab1-24apr",
+    "path": "",
+    "domain_guid": "fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "service_instance_guid": null,
+    "port": null,
+    "domain_url": "/v2/shared_domains/fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+    "domain": {
+      "metadata": {
+        "guid": "fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+        "url": "/v2/shared_domains/fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+        "created_at": "2013-05-04T00:29:46Z",
+        "updated_at": "2018-04-18T19:27:47Z"
+      },
+      "entity": {
+        "name": "cfapps.io",
+        "router_group_guid": null,
+        "router_group_type": null
+      }
+    },
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "space": {
+      "metadata": {
+        "guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+        "url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+        "created_at": "2017-11-13T13:25:33Z",
+        "updated_at": "2017-11-13T13:25:33Z"
+      },
+      "entity": {
+        "name": "development",
+        "organization_guid": "d7713572-8a98-4266-9263-32e089442834",
+        "space_quota_definition_guid": null,
+        "isolation_segment_guid": null,
+        "allow_ssh": true,
+        "organization_url": "/v2/organizations/d7713572-8a98-4266-9263-32e089442834",
+        "developers_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/developers",
+        "managers_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/managers",
+        "auditors_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/auditors",
+        "apps_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/apps",
+        "routes_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/routes",
+        "domains_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/domains",
+        "service_instances_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/service_instances",
+        "app_events_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/app_events",
+        "events_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/events",
+        "security_groups_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/security_groups",
+        "staging_security_groups_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/staging_security_groups"
+      }
+    },
+    "apps_url": "/v2/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba/apps",
+    "apps": [
+
+    ],
+    "route_mappings_url": "/v2/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba/route_mappings"
+  }
+}
+OK
+
+Binding lab1-24apr.cfapps.io to lab1-24apr...
+
+REQUEST: [2018-04-23T11:16:23+05:30]
+PUT /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:24+05:30]
+HTTP/1.1 201 Created
+Connection: close
+Content-Length: 1695
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:24 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19916
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: bdab5d77-8f3b-4ae9-7a2d-827b8fe2d5e4::ee0c2b6e-7923-4d53-8282-53f9b6588cd5
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:24Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": null,
+    "detected_buildpack_guid": null,
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STOPPED",
+    "version": "0445f9c5-ab1f-45a0-a87d-90db785e4469",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": null,
+    "package_state": "PENDING",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": null,
+    "detected_start_command": "",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+OK
+
+Uploading lab1-24apr...
+
+REQUEST: [2018-04-23T11:16:25+05:30]
+PUT /v2/resource_match HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+[{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"7c9a74d8c5a365bce80b895b599d5a0e1c9ecf2c","size":18},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"c087e6200bbc1d4f1ca3e87e0db1eb6b3d97ec69","size":1021},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"25738c0151f0ef0d1e5a9286c745ffecd74e9f1f","size":21},{"sha1":"0","size":0},{"sha1":"02ad2fd09dcf5607ca96f8ef432096a96986c40a","size":64804},{"sha1":"fb18766b576aa6632bcfe9a20a023cbd52bf9769","size":704465},{"sha1":"4465fda9834ab27eac2a76f9a378738d15a9b4fa","size":55783},{"sha1":"fd13b1c033741d48291315c6370f7d475a42dccf","size":280014},{"sha1":"c04eb2cc599cd1742889bfa7cc41878db0d152f5","size":1230290},{"sha1":"3616bb87707910296e2c195dc016287080bba5af","size":66802},{"sha1":"331b564a3a42f002a0004b039c1c430da89062cd","size":16431},{"sha1":"2f22c882ffa479d1e9ff4eb0e8e2c29f2a0871ed","size":4597},{"sha1":"b3700d97464d99bdcd42c0177d6e7951c94d75ff","size":23646},{"sha1":"9865cf6994f9ff13fce0bf93f2054ef6c65bb462","size":304075},{"sha1":"7873092d39ef741575ca91378a6a21c388363ac8","size":470782},{"sha1":"139535a69a4239db087de9bab0bee568bf8e0b70","size":41071},{"sha1":"7a27ea250c5130b2922b86dea63cbb1cc10a660c","size":273599},{"sha1":"caef216e995f565dd4ab165ec5918ff44487615d","size":379821},{"sha1":"9e87f48f65a33a017f2dd027911947a28be29f93","size":757134},{"sha1":"03b4ea475b40eb9dc966fb3c650c97bfabb988f9","size":646144},{"sha1":"9fa1ac16ac6fd96d7df2c72b55ba9814be082ffc","size":931865},{"sha1":"9eb9be27958cc17de9673a6fbbdaf16fb65a7fdc","size":2288},{"sha1":"53303110c92c921e09e1c9bc8b9bf4c1935c2f12","size":2308},{"sha1":"9f3530cbc1998b9aeebd0a5c070f5d4f24357610","size":2293},{"sha1":"bcefa854b75a7e0bcf612bfbe030bdcb05c9da82","size":2346},{"sha1":"e52782b824e097c3b1586b497fc6be0e95020770","size":1133137},{"sha1":"fd2f3cf45d3c84f293cb7ee3ab7d24c979495552","size":1110160},{"sha1":"7676acd4dde9d186b7f882edce3131dc62dcb590","size":263693},{"sha1":"562b3b775b6e8e7113b5d23b21946f939658bd19","size":811682},{"sha1":"99b68a8aca2ed67ad523e7341a90dd1c90fd669e","size":913982},{"sha1":"48ee085e4b3f71e98535e4c17c0ce1394812a94a","size":2978551},{"sha1":"2d53f2e3b6b456cb7ac82e1549a944db7f5b05bf","size":239714},{"sha1":"211d26f536aee3283345aa5b1c479e937401fcd2","size":241285},{"sha1":"8613ae82954779d518631e05daa73a6a954817d5","size":63777},{"sha1":"0","size":0},{"sha1":"50afc5afd353b30783921ccd9ab1a239be432626","size":609},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"7ceac537f961c2efa9d0990f05ea1ef2acd97d2a","size":256},{"sha1":"35de963f972a357f9867198fc73f6ee4c4963523","size":1695},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"0","size":0},{"sha1":"c818988df4e6feed699652d2a343915739d0a434","size":1165},{"sha1":"a3525942cc8bd5c5d8aee65479f4ec6ef64b4f1e","size":3128},{"sha1":"a1abacf8268c16b3caf8e1750faba563a0452c9f","size":2052},{"sha1":"96983c66992d3b892ba9c42f26dee3f66930d990","size":2335},{"sha1":"005bf84eae7c9105fe021d2e3e45740a4e3eaa84","size":4373},{"sha1":"dda1f638d373580c2cc13c391fd85e10323fa47f","size":4599},{"sha1":"57f13d0247b03178634c2c90b4e7bb969d552864","size":1468},{"sha1":"93ad565e9772c99b55294d582011b252ceec2f68","size":1382},{"sha1":"b931f6edfde0d0c82cfb77f4d2d1dcb1437b1e3f","size":1454},{"sha1":"ff5931f1f92959fe956d45009bdf4e19fa30747e","size":1700},{"sha1":"942ea1915ce57972b46730d4f190acd0f88d0e73","size":2382},{"sha1":"2399620314e0d36a12f580625ac5ad4e1a89de8b","size":1807},{"sha1":"684b3ff39eaefce16ba792fccf25bc4755a75d49","size":16303},{"sha1":"e5b5d78ff739d1b0357e3a60dcf8f352ccb7e034","size":1665},{"sha1":"0","size":0},{"sha1":"cadfd0a9baf26cd94796793c8bc11ba9b9ba5500","size":302},{"sha1":"d8bd747b6b68fdfd316818e0cf40e3b46d3ee31a","size":399},{"sha1":"9f751f2de6094276317cd333ca811cb48e839688","size":906},{"sha1":"4b33d6500a612ba34a0d565bba1f171c188ea209","size":273},{"sha1":"3b60d40dc14117aee0b0ef6988b31927f5e2ae9d","size":1068},{"sha1":"7c0c6f1500efcb970ffceb0db14e3bf540741e42","size":1438},{"sha1":"fde01b4f0dfd008fdf2fc39ff60345c41c1291dd","size":3792},{"sha1":"f12251798ff6fc6ae2da11f74f9a08b81a0be2c8","size":4974},{"sha1":"e5edba246e1b8fbdec41a92a0d631fd59e7bdd50","size":1749},{"sha1":"11e42fb79fa9703163e8abc200b83703d68d9d8a","size":1097},{"sha1":"c3eaa8a01dd953b69e14c362db525921d7120fdf","size":7016},{"sha1":"0","size":0},{"sha1":"d86ae5cc7d23bcf4fd3a91325a2ead70bc64bf7f","size":1531},{"sha1":"b309ef9da3a5fe9bf25da26256f67a5729c214fd","size":1341},{"sha1":"1c263db41c2219d77123b2048c6c519d5bc26344","size":551},{"sha1":"6691ea06c718a631080280e7aadea9ce7f7316d2","size":3526},{"sha1":"cfc5e6160ed5ad3eefa56045b2c3c832cf918aad","size":2344},{"sha1":"cd539abedf4a30b2b680b7ba4cf4c90ed3d71150","size":3390},{"sha1":"0","size":0},{"sha1":"b9af22de80ff908740bdfb14fb73f5bd832c542b","size":4298},{"sha1":"967ddac45693dadc593eaf15fbf80534f1cd69b7","size":2161},{"sha1":"8f0c4988077c320efb0b0699dda8b126504986b8","size":2943},{"sha1":"77d56542f5f0148287862a30699fd3ed581724f3","size":5449},{"sha1":"b01bb38f7cd6f1d459b7091a01a6be25b9ef6877","size":4602},{"sha1":"e7e4b96eb08f39dc1b1a2f9312360d45b524a663","size":430},{"sha1":"2aa344847b3cc2553201451204bbeedf8ec98780","size":306},{"sha1":"c3f0d72c06b8a8d284ddd0adb433081d2cef34d2","size":6410},{"sha1":"4492d608c3c2fec3679899d475bb6c8b9872b4c5","size":3346},{"sha1":"65c3b9d3272555a67694c6554933231169e41278","size":262},{"sha1":"9d289f962c48821455b27f9789c05e6262049b87","size":2002},{"sha1":"3cfa75046dbd430dde45ed183d5e0ce6358aa3e2","size":1199},{"sha1":"c0946fb535263b23a03f06efab9b760afeb8884c","size":1427},{"sha1":"43d06fbaec5f3915714972aefc8c43e2bdd42baf","size":1300},{"sha1":"60052fb8f2aa5c155fd3a11fa4e606dde959a684","size":12621},{"sha1":"3e331fa38d1985a22d0180ed0f8eb26da0c43f31","size":1540},{"sha1":"7e204bb394a2cf5a942a32e730db3e7f7561495e","size":1967},{"sha1":"654bc987b6076f0b0fb71c2f061ea93b4e099b92","size":10924},{"sha1":"a64e0d4b2eb5b699ed5266573fbf0b4eae3ccab6","size":672},{"sha1":"1a2c19988d808c6c0b3328b2765093f51b2dbe18","size":3655},{"sha1":"bd1a53ed9b7f08f4bae96c47c705abf2017f1c24","size":8375},{"sha1":"c6e813cc4b2f605472f16f988ff5d78480a0dfed","size":1629},{"sha1":"0","size":0},{"sha1":"5770a14ebb95cff1357b4bc753b1d1301ac22715","size":4947}]
+
+RESPONSE: [2018-04-23T11:16:27+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1258
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:27 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19915
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: a026a438-7b7e-4a67-4768-c7a8f767d0d2::8e3e5c59-f622-4495-9d33-bcc6c2008f0f
+
+[{"sha1":"fb18766b576aa6632bcfe9a20a023cbd52bf9769","size":704465},{"sha1":"fd13b1c033741d48291315c6370f7d475a42dccf","size":280014},{"sha1":"c04eb2cc599cd1742889bfa7cc41878db0d152f5","size":1230290},{"sha1":"3616bb87707910296e2c195dc016287080bba5af","size":66802},{"sha1":"9865cf6994f9ff13fce0bf93f2054ef6c65bb462","size":304075},{"sha1":"7873092d39ef741575ca91378a6a21c388363ac8","size":470782},{"sha1":"7a27ea250c5130b2922b86dea63cbb1cc10a660c","size":273599},{"sha1":"caef216e995f565dd4ab165ec5918ff44487615d","size":379821},{"sha1":"9e87f48f65a33a017f2dd027911947a28be29f93","size":757134},{"sha1":"03b4ea475b40eb9dc966fb3c650c97bfabb988f9","size":646144},{"sha1":"9fa1ac16ac6fd96d7df2c72b55ba9814be082ffc","size":931865},{"sha1":"e52782b824e097c3b1586b497fc6be0e95020770","size":1133137},{"sha1":"fd2f3cf45d3c84f293cb7ee3ab7d24c979495552","size":1110160},{"sha1":"7676acd4dde9d186b7f882edce3131dc62dcb590","size":263693},{"sha1":"562b3b775b6e8e7113b5d23b21946f939658bd19","size":811682},{"sha1":"99b68a8aca2ed67ad523e7341a90dd1c90fd669e","size":913982},{"sha1":"48ee085e4b3f71e98535e4c17c0ce1394812a94a","size":2978551},{"sha1":"2d53f2e3b6b456cb7ac82e1549a944db7f5b05bf","size":239714},{"sha1":"211d26f536aee3283345aa5b1c479e937401fcd2","size":241285}]
+Uploading app files from: C:\Users\K V Ramana Rao\AppData\Local\Temp\unzipped-app771362343
+Uploading 314.3K, 91 files
+
+REQUEST: [2018-04-23T11:16:28+05:30]
+PUT /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/bits?async=true HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: multipart/form-data; boundary=f207489c00b8bd7c225eea7fc6739f66ca2f3b7dadbf4cbeccc4962a2aab
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+[MULTIPART/FORM-DATA CONTENT HIDDEN]
+                             Done uploading
+
+RESPONSE: [2018-04-23T11:16:30+05:30]
+HTTP/1.1 201 Created
+Connection: close
+Content-Length: 270
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:30 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19914
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 5bd38372-ac67-4b67-42ca-1e65906892c1::8fabf108-fa1f-439a-b6e4-f1673f45c8e7
+
+{
+  "metadata": {
+    "guid": "983429ee-ebc3-4955-8ed6-f91dc31f27b2",
+    "created_at": "2018-04-23T05:46:30Z",
+    "url": "/v2/jobs/983429ee-ebc3-4955-8ed6-f91dc31f27b2"
+  },
+  "entity": {
+    "guid": "983429ee-ebc3-4955-8ed6-f91dc31f27b2",
+    "status": "queued"
+  }
+}
+
+REQUEST: [2018-04-23T11:16:30+05:30]
+GET /v2/jobs/983429ee-ebc3-4955-8ed6-f91dc31f27b2 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:31+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 271
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:31 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19913
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 6129aee9-acd4-4b4b-6739-fbda08bf1722::326e1c1c-e025-4080-a5f1-e0521f443d46
+
+{
+  "metadata": {
+    "guid": "983429ee-ebc3-4955-8ed6-f91dc31f27b2",
+    "created_at": "2018-04-23T05:46:30Z",
+    "url": "/v2/jobs/983429ee-ebc3-4955-8ed6-f91dc31f27b2"
+  },
+  "entity": {
+    "guid": "983429ee-ebc3-4955-8ed6-f91dc31f27b2",
+    "status": "running"
+  }
+}
+
+REQUEST: [2018-04-23T11:16:36+05:30]
+GET /v2/jobs/983429ee-ebc3-4955-8ed6-f91dc31f27b2 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:37+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 167
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:37 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19912
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 8d68c280-49b4-46ac-7008-038ab656e4e5::0f5c3612-b58c-49d8-9ce9-7902f9aaddff
+
+{
+  "metadata": {
+    "guid": "0",
+    "created_at": "1970-01-01T00:00:00Z",
+    "url": "/v2/jobs/0"
+  },
+  "entity": {
+    "guid": "0",
+    "status": "finished"
+  }
+}
+OK
+
+
+WEBSOCKET REQUEST [2018-04-23T11:16:38+05:30]
+GET /apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/stream HTTP/1.1
+Host: wss://doppler.run.pivotal.io:443
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: [HIDDEN]
+Origin: wss://doppler.run.pivotal.io:443
+Authorization: [PRIVATE DATA HIDDEN]
+
+
+WEBSOCKET RESPONSE [2018-04-23T11:16:39+05:30]
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-Websocket-Accept: 7FUwjdJflylxGevc72IfLh+KDp0=
+
+Starting app lab1-24apr in org MST / space development as adityahrudayam777@gmail.com...
+
+REQUEST: [2018-04-23T11:16:39+05:30]
+PUT /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165?async=true&inline-relations-depth=1 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+{"state":"STARTED"}
+
+RESPONSE: [2018-04-23T11:16:41+05:30]
+HTTP/1.1 201 Created
+Connection: close
+Content-Length: 4611
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:41 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19911
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 237bea6e-72f1-4dc8-6312-584890918a35::f113d556-2ddc-49c9-960e-a6bf8fed2723
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:40Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": null,
+    "detected_buildpack_guid": null,
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STARTED",
+    "version": "309d6b26-d2b8-4d33-abfe-c7ed6b9a3e50",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": "a0ed3673-8951-41eb-a283-483ca365022e",
+    "package_state": "PENDING",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": "2018-04-23T05:46:30Z",
+    "detected_start_command": "",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "space": {
+      "metadata": {
+        "guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+        "url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+        "created_at": "2017-11-13T13:25:33Z",
+        "updated_at": "2017-11-13T13:25:33Z"
+      },
+      "entity": {
+        "name": "development",
+        "organization_guid": "d7713572-8a98-4266-9263-32e089442834",
+        "space_quota_definition_guid": null,
+        "isolation_segment_guid": null,
+        "allow_ssh": true,
+        "organization_url": "/v2/organizations/d7713572-8a98-4266-9263-32e089442834",
+        "developers_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/developers",
+        "managers_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/managers",
+        "auditors_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/auditors",
+        "apps_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/apps",
+        "routes_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/routes",
+        "domains_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/domains",
+        "service_instances_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/service_instances",
+        "app_events_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/app_events",
+        "events_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/events",
+        "security_groups_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/security_groups",
+        "staging_security_groups_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1/staging_security_groups"
+      }
+    },
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "stack": {
+      "metadata": {
+        "guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+        "url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+        "created_at": "2015-03-04T18:58:42Z",
+        "updated_at": null
+      },
+      "entity": {
+        "name": "cflinuxfs2",
+        "description": "Cloud Foundry Linux-based filesystem"
+      }
+    },
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "routes": [
+      {
+        "metadata": {
+          "guid": "8b4d1da7-dc7f-4515-b840-c2e91f9916ba",
+          "url": "/v2/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba",
+          "created_at": "2018-04-23T05:46:22Z",
+          "updated_at": "2018-04-23T05:46:22Z"
+        },
+        "entity": {
+          "host": "lab1-24apr",
+          "path": "",
+          "domain_guid": "fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+          "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+          "service_instance_guid": null,
+          "port": null,
+          "domain_url": "/v2/shared_domains/fb6bd89f-2ed9-49d4-9ad1-97951a573135",
+          "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+          "apps_url": "/v2/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba/apps",
+          "route_mappings_url": "/v2/routes/8b4d1da7-dc7f-4515-b840-c2e91f9916ba/route_mappings"
+        }
+      }
+    ],
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "service_bindings": [
+
+    ],
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+
+REQUEST: [2018-04-23T11:16:41+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+Downloading binary_buildpack...
+Downloading go_buildpack...
+Downloading dotnet_core_buildpack...
+Downloading python_buildpack...
+Downloading php_buildpack...
+Downloaded go_buildpack
+Downloading ruby_buildpack...
+Downloaded php_buildpack
+Downloading hwc_buildpack...
+Downloaded binary_buildpack
+Downloading dotnet_core_buildpack_beta...
+Downloaded dotnet_core_buildpack
+Downloading nodejs_buildpack...
+Downloaded ruby_buildpack
+Downloaded dotnet_core_buildpack_beta
+Downloading staticfile_buildpack...
+Downloaded nodejs_buildpack
+Downloading java_buildpack...
+Downloaded python_buildpack
+Downloaded hwc_buildpack
+Downloaded java_buildpack
+Downloaded staticfile_buildpack
+Cell 6d545859-b729-4434-8158-8d0ae0e3dd0a creating container for instance a0ed3673-8951-41eb-a283-483ca365022e
+
+RESPONSE: [2018-04-23T11:16:43+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1747
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:42 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19909
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: e0da3b89-1b5d-44a0-5d3e-15da4dba95d5::b5c35cfe-7a11-4bd0-90bb-320c0b61ec77
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:40Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": null,
+    "detected_buildpack_guid": null,
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STARTED",
+    "version": "309d6b26-d2b8-4d33-abfe-c7ed6b9a3e50",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": "a0ed3673-8951-41eb-a283-483ca365022e",
+    "package_state": "PENDING",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": "2018-04-23T05:46:30Z",
+    "detected_start_command": "",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+Cell 6d545859-b729-4434-8158-8d0ae0e3dd0a successfully created container for instance a0ed3673-8951-41eb-a283-483ca365022e
+Downloading app package...
+Downloaded app package (12M)
+[1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.10[0m [34m(offline)[0m | https://github.com/cloudfoundry/java-buildpack.git#978e329
+[1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.12.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/trusty/x86_64/jvmkill-1.12.0_RELEASE.so [3m[32m(found in cache)[0m[23m
+[1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m1.8.0_162[0m from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_162.tar.gz [3m[32m(found in cache)[0m[23m
+
+REQUEST: [2018-04-23T11:16:48+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(1.1s)[0m[23m
+       JVM DNS caching disabled in lieu of BOSH DNS caching
+[1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.11.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-3.11.0_RELEASE.tar.gz [3m[32m(found in cache)[0m[23m
+
+RESPONSE: [2018-04-23T11:16:49+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1747
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:49 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19907
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: cd5e380c-e980-4d86-41df-d5356daaa38f::79b50d1f-522f-4c25-9168-7dcdce9630b1
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:40Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": null,
+    "detected_buildpack_guid": null,
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STARTED",
+    "version": "309d6b26-d2b8-4d33-abfe-c7ed6b9a3e50",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": "a0ed3673-8951-41eb-a283-483ca365022e",
+    "package_state": "PENDING",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": "2018-04-23T05:46:30Z",
+    "detected_start_command": "",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+       Loaded Classes: 12787, Threads: 250
+[1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.6.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.6.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+[1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.13.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+[1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.4.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.4.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+
+REQUEST: [2018-04-23T11:16:54+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:16:55+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1747
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:46:55 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19888
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 8f10ca8f-c1b4-434a-45ac-4027067280c3::58034538-3e5a-44bd-ac7d-e0e369c03f43
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:40Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": null,
+    "detected_buildpack_guid": null,
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STARTED",
+    "version": "309d6b26-d2b8-4d33-abfe-c7ed6b9a3e50",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": "a0ed3673-8951-41eb-a283-483ca365022e",
+    "package_state": "PENDING",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": "2018-04-23T05:46:30Z",
+    "detected_start_command": "",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+Exit status 0
+Uploading droplet, build artifacts cache...
+Uploading build artifacts cache...
+Uploading droplet...
+Uploaded build artifacts cache (131B)
+
+REQUEST: [2018-04-23T11:17:00+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:01+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 2847
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:01 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19887
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 22f739a4-d71a-4910-5bc7-9170e4577af7::eab35f3c-f2b5-4826-abbb-a7cd479baf52
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:40Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": "client-certificate-mapper=1.6.0_RELEASE container-security-provider=1.13.0_RELEASE java-buildpack=\u001B[34mv4.10\u001B[0m-offline-https://github.com/cloudfoundry/java-buildpack.git#978e329 java-main java-opts java-security jvmkill-agent=1.12.0_RELEASE open-jdk-...",
+    "detected_buildpack_guid": "e000b78c-c898-419e-843c-2fd64175527e",
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STARTED",
+    "version": "309d6b26-d2b8-4d33-abfe-c7ed6b9a3e50",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": "a0ed3673-8951-41eb-a283-483ca365022e",
+    "package_state": "STAGED",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": "2018-04-23T05:46:30Z",
+    "detected_start_command": "JAVA_OPTS=\"-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS\" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.11.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250 -loadedClasses=13496 -poolType=metaspace -vmOptions=\"$JAVA_OPTS\") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS=\"$JAVA_OPTS $CALCULATED_MEMORY\" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+Uploaded droplet (58.3M)
+Uploading complete
+Cell 6d545859-b729-4434-8158-8d0ae0e3dd0a stopping instance a0ed3673-8951-41eb-a283-483ca365022e
+Cell 6d545859-b729-4434-8158-8d0ae0e3dd0a destroying container for instance a0ed3673-8951-41eb-a283-483ca365022e
+Cell 6d545859-b729-4434-8158-8d0ae0e3dd0a successfully destroyed container for instance a0ed3673-8951-41eb-a283-483ca365022e
+
+
+REQUEST: [2018-04-23T11:17:06+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/instances HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:07+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 56
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:07 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19886
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: b489be4a-7bfe-404e-6cb6-25ff3c7f74af::4deef3a0-1eae-47e9-b7ab-329042a3a84d
+
+{"0":{"state":"STARTING","uptime":6,"since":1524462421}}
+
+REQUEST: [2018-04-23T11:17:07+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/stats HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:08+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 278
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:08 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19885
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: edab04ad-924d-4922-7d54-07027089d7d9::14e81887-eac4-4aaa-89ad-36bf8f52a041
+
+{"0":{"state":"STARTING","isolation_segment":null,"stats":{"name":"lab1-24apr","uris":["lab1-24apr.cfapps.io"],"host":"","port":0,"uptime":7,"mem_quota":1073741824,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2018-04-23T05:47:08+00:00","cpu":0,"mem":0,"disk":0}}}}
+0 of 1 instances running, 1 starting
+
+REQUEST: [2018-04-23T11:17:13+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/instances HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:14+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 57
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:14 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19884
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 70b47f32-bff7-4319-5e45-bc8db4c6e920::423be75f-0300-4b69-b612-fffd02b8dabb
+
+{"0":{"state":"STARTING","uptime":13,"since":1524462421}}
+
+REQUEST: [2018-04-23T11:17:14+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/stats HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:16+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 297
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:16 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19883
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 2cc78e29-5b80-4daa-76e6-65024d5a926b::32101bd8-12f7-4527-9cc9-d02ee45cfbe5
+
+{"0":{"state":"STARTING","isolation_segment":null,"stats":{"name":"lab1-24apr","uris":["lab1-24apr.cfapps.io"],"host":"","port":0,"uptime":14,"mem_quota":1073741824,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2018-04-23T05:47:15+00:00","cpu":0.0,"mem":277221251,"disk":143998976}}}}
+0 of 1 instances running, 1 starting
+
+REQUEST: [2018-04-23T11:17:21+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/instances HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:22+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 55
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:22 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19882
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: edf6ce7b-5e7d-4bf8-5678-765ca42faf0c::822cd218-b71e-4c15-81ed-631755f412d2
+
+{"0":{"state":"RUNNING","uptime":1,"since":1524462440}}
+
+REQUEST: [2018-04-23T11:17:22+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/stats HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:23+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 312
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:23 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19881
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 469877de-2a3a-4e0a-67a9-35ef4e058d82::8007150e-a444-4be3-b666-7b80a8e676a5
+
+{"0":{"state":"RUNNING","isolation_segment":null,"stats":{"name":"lab1-24apr","uris":["lab1-24apr.cfapps.io"],"host":"10.10.149.157","port":61120,"uptime":3,"mem_quota":1073741824,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2018-04-23T05:47:23+00:00","cpu":0.0,"mem":277221251,"disk":143998976}}}}
+1 of 1 instances running
+
+App started
+
+
+OK
+
+REQUEST: [2018-04-23T11:17:23+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:24+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 2847
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:24 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19880
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 19d4bfa7-78ed-4453-75a2-53b75cf27ffb::97c3ed94-ea77-4893-93ae-6f5fb40b354e
+
+{
+  "metadata": {
+    "guid": "7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165",
+    "created_at": "2018-04-23T05:46:18Z",
+    "updated_at": "2018-04-23T05:46:40Z"
+  },
+  "entity": {
+    "name": "lab1-24apr",
+    "production": false,
+    "space_guid": "e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "buildpack": null,
+    "detected_buildpack": "client-certificate-mapper=1.6.0_RELEASE container-security-provider=1.13.0_RELEASE java-buildpack=\u001B[34mv4.10\u001B[0m-offline-https://github.com/cloudfoundry/java-buildpack.git#978e329 java-main java-opts java-security jvmkill-agent=1.12.0_RELEASE open-jdk-...",
+    "detected_buildpack_guid": "e000b78c-c898-419e-843c-2fd64175527e",
+    "environment_json": {
+
+    },
+    "memory": 1024,
+    "instances": 1,
+    "disk_quota": 1024,
+    "state": "STARTED",
+    "version": "309d6b26-d2b8-4d33-abfe-c7ed6b9a3e50",
+    "command": null,
+    "console": false,
+    "debug": null,
+    "staging_task_id": "a0ed3673-8951-41eb-a283-483ca365022e",
+    "package_state": "STAGED",
+    "health_check_type": "port",
+    "health_check_timeout": null,
+    "health_check_http_endpoint": null,
+    "staging_failed_reason": null,
+    "staging_failed_description": null,
+    "diego": true,
+    "docker_image": null,
+    "docker_credentials": {
+      "username": null,
+      "password": null
+    },
+    "package_updated_at": "2018-04-23T05:46:30Z",
+    "detected_start_command": "JAVA_OPTS=\"-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS\" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.11.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250 -loadedClasses=13496 -poolType=metaspace -vmOptions=\"$JAVA_OPTS\") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS=\"$JAVA_OPTS $CALCULATED_MEMORY\" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher",
+    "enable_ssh": true,
+    "ports": [
+      8080
+    ],
+    "space_url": "/v2/spaces/e26390db-1f29-407d-bacd-41fdc6cecca1",
+    "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "routes_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/routes",
+    "events_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/events",
+    "service_bindings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/service_bindings",
+    "route_mappings_url": "/v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/route_mappings"
+  }
+}
+
+App lab1-24apr was started using this command `JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.11.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250 -loadedClasses=13496 -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
+
+Showing health and status for app lab1-24apr in org MST / space development as adityahrudayam777@gmail.com...
+
+REQUEST: [2018-04-23T11:17:24+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/summary HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:25+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 2542
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:25 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19879
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: e90d410b-49da-4a34-592a-a9d4b4368fa1::7e015daf-69d1-4f29-a931-52d6554c75a8
+
+{"guid":"7e132f8e-5be8-4290-a9ab-cf90aceec165","name":"lab1-24apr","routes":[{"guid":"8b4d1da7-dc7f-4515-b840-c2e91f9916ba","host":"lab1-24apr","port":null,"path":"","domain":{"guid":"fb6bd89f-2ed9-49d4-9ad1-97951a573135","name":"cfapps.io"}}],"running_instances":1,"services":[],"available_domains":[{"guid":"fb6bd89f-2ed9-49d4-9ad1-97951a573135","name":"cfapps.io","router_group_guid":null,"router_group_type":null},{"guid":"d42961c0-8361-4d60-bf58-9a3c1f09600a","name":"cf-tcpapps.io","router_group_guid":"ac86636b-fc8b-46d7-49c4-edce5118daf2","router_group_type":null},{"guid":"f6ed3f6b-f051-4f09-8d88-f95c09e7cf0f","name":"apps.internal","router_group_guid":null,"router_group_type":null}],"production":false,"space_guid":"e26390db-1f29-407d-bacd-41fdc6cecca1","stack_guid":"86205f38-84fc-4bc2-b2b8-af7f55669f04","buildpack":null,"detected_buildpack":"client-certificate-mapper=1.6.0_RELEASE container-security-provider=1.13.0_RELEASE java-buildpack=\u001B[34mv4.10\u001B[0m-offline-https://github.com/cloudfoundry/java-buildpack.git#978e329 java-main java-opts java-security jvmkill-agent=1.12.0_RELEASE open-jdk-...","detected_buildpack_guid":"e000b78c-c898-419e-843c-2fd64175527e","environment_json":{},"memory":1024,"instances":1,"disk_quota":1024,"state":"STARTED","version":"309d6b26-d2b8-4d33-abfe-c7ed6b9a3e50","command":null,"console":false,"debug":null,"staging_task_id":"a0ed3673-8951-41eb-a283-483ca365022e","package_state":"STAGED","health_check_type":"port","health_check_timeout":null,"health_check_http_endpoint":null,"staging_failed_reason":null,"staging_failed_description":null,"diego":true,"docker_image":null,"package_updated_at":"2018-04-23T05:46:30Z","detected_start_command":"JAVA_OPTS=\"-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS\" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.11.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250 -loadedClasses=13496 -poolType=metaspace -vmOptions=\"$JAVA_OPTS\") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS=\"$JAVA_OPTS $CALCULATED_MEMORY\" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher","enable_ssh":true,"ports":null}
+
+REQUEST: [2018-04-23T11:17:25+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/instances HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:27+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 55
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:27 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19878
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 26522f74-bf52-4eef-558a-e0f838b62c17::98176e48-f594-4453-8554-4c0819d77732
+
+{"0":{"state":"RUNNING","uptime":6,"since":1524462440}}
+
+REQUEST: [2018-04-23T11:17:27+05:30]
+GET /v2/apps/7e132f8e-5be8-4290-a9ab-cf90aceec165/stats HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:28+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 312
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:28 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19877
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: a94e1dc6-c72f-4c32-6043-dc586238e0fb::fdd5c4c3-9505-44d7-bce7-27982db5e455
+
+{"0":{"state":"RUNNING","isolation_segment":null,"stats":{"name":"lab1-24apr","uris":["lab1-24apr.cfapps.io"],"host":"10.10.149.157","port":61120,"uptime":7,"mem_quota":1073741824,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2018-04-23T05:47:28+00:00","cpu":0.0,"mem":277221251,"disk":143998976}}}}
+OK
+
+requested state: started
+instances: 1/1
+usage: 1G x 1 instances
+urls: lab1-24apr.cfapps.io
+last uploaded: Mon Apr 23 05:46:30 UTC 2018
+
+REQUEST: [2018-04-23T11:17:28+05:30]
+GET /v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04 HTTP/1.1
+Host: api.run.pivotal.io
+Accept: application/json
+Authorization: [PRIVATE DATA HIDDEN]
+Connection: close
+Content-Type: application/json
+User-Agent: go-cli 6.32.0+0191c33d9.2017-09-26 / windows
+
+
+
+RESPONSE: [2018-04-23T11:17:29+05:30]
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 305
+Content-Type: application/json;charset=utf-8
+Date: Mon, 23 Apr 2018 05:47:29 GMT
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20000
+X-Ratelimit-Remaining: 19876
+X-Ratelimit-Reset: 1524465439
+X-Vcap-Request-Id: 72ced167-a6d1-41f3-4034-19382b903949::f35ffc6a-460e-4038-b655-c7425bd9832f
+
+{
+  "metadata": {
+    "guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+    "created_at": "2015-03-04T18:58:42Z",
+    "updated_at": null
+  },
+  "entity": {
+    "name": "cflinuxfs2",
+    "description": "Cloud Foundry Linux-based filesystem"
+  }
+}
+stack: cflinuxfs2
+buildpack: client-certificate-mapper=1.6.0_RELEASE container-security-provider=1.13.0_RELEASE java-buildpack=[34mv4.10[0m-offline-https://github.com/cloudfoundry/java-buildpack.git#978e329 java-main java-opts java-security jvmkill-agent=1.12.0_RELEASE open-jdk-...
+
+     state     since                    cpu    memory         disk           details
+#0   running   2018-04-23 11:17:20 AM   0.0%   264.4M of 1G   137.3M of 1G

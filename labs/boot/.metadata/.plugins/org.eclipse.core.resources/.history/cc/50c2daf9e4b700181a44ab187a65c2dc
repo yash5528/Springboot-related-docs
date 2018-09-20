@@ -1,0 +1,5 @@
+1. Install cygwin64 for windows
+> dist/setup-x86_64.exe
+
+2. Extract redis-latest.zip
+> run redis-server.exe

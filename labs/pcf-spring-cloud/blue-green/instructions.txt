@@ -1,0 +1,13 @@
+
+blue/green deployment
+
+D:\boot\labs\blue-app>cf push
+
+D:\boot\labs\green-app>cf push
+
+cf map-route green-app cfapps.io -n myapptest777
+
+
+cf unmap-route blue-app cfapps.io -n myapptest777
+
+cf delete-route cfapps.io -n myapptest777v2

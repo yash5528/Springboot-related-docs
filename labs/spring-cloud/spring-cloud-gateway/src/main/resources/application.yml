@@ -1,0 +1,11 @@
+server:
+  port: 80
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: test_route
+        uri: http://www.gmail.co.in
+        predicates:
+        - Path=/test
+        

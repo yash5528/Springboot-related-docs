@@ -1,0 +1,9 @@
+---
+memory: 1G
+applications:
+  - name: company
+    host: company777
+    services:
+      - service-registry
+    env:
+      SPRING_PROFILES_ACTIVE: dev

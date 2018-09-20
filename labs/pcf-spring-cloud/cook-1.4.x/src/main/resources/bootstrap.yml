@@ -1,0 +1,14 @@
+# code_snippet springApplicationName start
+spring:
+  application:
+    name: cook
+
+
+secretMenu: Sambar Vada
+
+encrypt:
+  keyStore:
+    location: classpath:/server.jks
+    password: letmein
+    alias: mytestkey
+    secret: changeme

@@ -1,0 +1,17 @@
+package demo.kafka.service;
+
+
+
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Component;
+
+@Service
+public class Receiver {
+
+  @KafkaListener(topics = "testtopic")
+  public void receive(ConsumerRecord<?, ?> consumerRecord) {
+    System.out.println("received message: "+consumerRecord.toString());
+   
+  }
+}

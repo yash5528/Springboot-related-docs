@@ -1,0 +1,33 @@
+Spring Batch is a framework for batch processing - execution of a series of jobs. 
+In Spring Batch, A job consists of many steps and each step consists of a 
+READ-PROCESS-WRITE task or single operation task (tasklet).
+
+
+a). For "READ-PROCESS-WRITE" process, it means "read" data from the resources 
+(csv, xml or database), "process" it and "write" it to other resources (csv, xml and 
+database). For example, a step may read data from a CSV file, process it and write it
+into the database. Spring Batch provides many made Classes to read/write CSV, 
+XML and database.
+
+
+b). For "single" operation task (tasklet), it means doing single task only, like clean 
+up the resources after or before a step is started or completed.
+
+
+c). And the steps can be chained together to run as a job.
+
+
+1 Job = Many Steps.
+1 Step = 1 READ-PROCESS-WRITE or 1 Tasklet.
+Job = {Step 1 -> Step 2 -> Step 3} (Chained together)
+
+
+
+FlatFileItemReader 
+==================
+
+Lines to skip: The linesToSkip property tells the file reader how many leading lines in the file to skip. Quite often CSV files will contain header information, such as column names, in the first line of a file, so in this example we tell the file reader to skip the first line.
+
+Line mapper: The lineMapper is responsible for converting individual lines of a file into objects. It depends on two components:
+•	lineTokenizer defines how to break the line up into tokens. In our case we list the names of the columns in the CSV file.
+•	fieldSetMapper builds an object from field values. In our case we build a Product object from the id, name, description, and quantity fields.
